@@ -1,0 +1,7 @@
+C:\Users\Home\Source\Repos\QuickSort\QuickSorter\QuickSorter\bin\Debug\QuickSorter.exe.config
+C:\Users\Home\Source\Repos\QuickSort\QuickSorter\QuickSorter\bin\Debug\QuickSorter.exe
+C:\Users\Home\Source\Repos\QuickSort\QuickSorter\QuickSorter\bin\Debug\QuickSorter.pdb
+C:\Users\Home\Source\Repos\QuickSort\QuickSorter\QuickSorter\obj\Debug\QuickSorter.csproj.CoreCompileInputs.cache
+C:\Users\Home\Source\Repos\QuickSort\QuickSorter\QuickSorter\obj\Debug\QuickSorter.exe
+C:\Users\Home\Source\Repos\QuickSort\QuickSorter\QuickSorter\obj\Debug\QuickSorter.pdb
+C:\Users\Home\source\repos\QuickSort\QuickSorter\QuickSorter\obj\Debug\QuickSorter.csprojResolveAssemblyReference.cache
