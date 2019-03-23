@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using QuickSortConsole;
 
 namespace UnitTestProject1
 {
@@ -9,7 +10,7 @@ namespace UnitTestProject1
         public void TestSort3Elements()
         {
             var array = new int[] { 3, 2, 1 };
-            QuickSortConsole.Program.QuickSort(array);
+            Program.QuickSort(array);
 
             Assert.IsTrue(array[1] > array[0]);
             Assert.IsTrue(array[2] > array[1]);
@@ -24,7 +25,7 @@ namespace UnitTestProject1
                 array[i] = 88;
             }
 
-            QuickSortConsole.Program.QuickSort(array);
+            Program.QuickSort(array);
 
             for (int i = 0; i < array.Length - 1; i++)
             {           
@@ -35,17 +36,19 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestSort1000Elements()
         {
-            var array = new int[1000];
-            for (int i = 0; i < 1000; i++)
-            {
-                array[i] = 888;
-            }
+            var array = Program.GenerateArray(1000);
+            bool b = false;
 
-            QuickSortConsole.Program.QuickSort(array);
+            Program.QuickSort(array);
 
-            for (int i = 0; i < array.Length - 1; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                Assert.AreEqual(array[i], 888);
+                if (array[i] <= array[i])
+                {
+                    b = true;
+                }
+                Assert.AreEqual(b, true);
+                b = false;
             }
         }
 
@@ -53,17 +56,18 @@ namespace UnitTestProject1
         public void TestSortТullElements()
         {
             var array = new int[0];
+            bool b = false;
+
+            Program.QuickSort(array);
 
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = 88;
-            }
-
-            QuickSortConsole.Program.QuickSort(array);
-
-            for (int i = 0; i < array.Length - 1; i++)
-            {
-                Assert.AreEqual(array[i], 88);
+                if (array[i] <= array[i])
+                {
+                    b = true;
+                }
+                Assert.AreEqual(b, true);
+                b = false;
             }
         }   
     }
